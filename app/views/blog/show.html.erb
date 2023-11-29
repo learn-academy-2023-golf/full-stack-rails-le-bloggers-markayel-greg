@@ -1,0 +1,8 @@
+<% if @blog.read? %> 
+<h3> I have read <%= @blog.title %> </h3>
+<% else %>  
+<h3> I have not read <%= @blog.title %> </h3>
+
+<% end %>  
+
+<p><%= link_to 'All the blogs', blogs_path %><p>
