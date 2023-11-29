@@ -1,0 +1,11 @@
+<h1> Edit Blog </h1>
+
+<%= form_with model: @blogs, method: :patch do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <%= form.label :read %>
+    <%= form.check_box :read %>
+    <%= form.submit "Edit Blog" %>
+<% end %>
+
+<p><%= link_to 'Return to Catalog', blogs_path %></p>
