@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
- get 'blogs' => 'blog#index'
+ get '/blogs' => '/blog#index'
 end
